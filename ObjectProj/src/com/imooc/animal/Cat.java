@@ -27,6 +27,7 @@ public class Cat {
 	
 	// 成员方法：跑动
 	public void run() {
+		this.eat();
 		System.out.println("小猫快跑");
 	}
 	
