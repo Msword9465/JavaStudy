@@ -5,32 +5,34 @@ public class CatTest {
 	public static void main(String[] args) {
 		// 对象实例化
 		Cat one = new Cat();// 先声明了对象，new关键字在堆中开辟内存空间
-		Cat two = one;// 指向同一内存空间
+		// Cat two = one;// 指向同一内存空间
+
+		one.setName("花花");
+		one.setMonth(2);
+		one.setSpecies("英国短毛猫");
+		one.setWeight(1000);
+//		one.price = 2000;
+		Cat.price = 2000;
+		System.out.println("昵称：" + one.getName());
+		System.out.println("年龄：" + one.getMonth());
+		System.out.println("体重：" + one.getWeight());
+		System.out.println("品种：" + one.getSpecies());
+		System.out.println("价格：" + Cat.price);
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 		
-		
-		// 测试对象
-		one.eat();
-		one.run();
-		one.name = "花花";
-//		one.run(one.name);
-		one.month = 2;
-		one.weight = 1000;
-		one.species = "英国短毛猫";
-		
-		two.name = "花花";
-		two.month = 2;
-		two.weight = 1000;
-		two.species = "英国短毛猫";		
-		
-		System.out.println("昵称："+one.name);
-		System.out.println("年龄："+one.month);
-		System.out.println("体重："+one.weight);
-		System.out.println("品种："+one.species);
-		System.out.println("---------------------");
-		System.out.println("昵称："+two.name);
-		System.out.println("年龄："+two.month);
-		System.out.println("体重："+two.weight);
-		System.out.println("品种："+two.species);
+		Cat two = new Cat();
+		two.setName("凡凡");
+		two.setMonth(1);
+		two.setSpecies("英国短毛猫");
+		two.setWeight(100);
+//		two.price = 150;
+		Cat.price = 150;
+		System.out.println("昵称：" + two.getName());
+		System.out.println("年龄：" + two.getMonth());
+		System.out.println("体重：" + two.getWeight());
+		System.out.println("品种：" + two.getSpecies());
+		System.out.println("价格：" + Cat.price);
+
 	}
 
 }
