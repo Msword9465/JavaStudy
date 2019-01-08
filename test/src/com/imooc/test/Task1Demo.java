@@ -2,6 +2,7 @@ package com.imooc.test;
 
 import java.util.Scanner;
 
+//mac运行测试
 public class Task1Demo {
 	// 插入数据
 	public int[] insertData() {
